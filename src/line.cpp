@@ -12,7 +12,7 @@ void Line::setup(){
     
 }
 void Line::draw(){
-    ofSetColor(46, 189, 189, random(0.5,1));
+    ofSetColor(46, 189, 189, ofRandom(0.5,1));
     ofSetLineWidth(thickness);
     ofDrawLine(x1, y1, x2, y2);
 }
