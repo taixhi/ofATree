@@ -34,6 +34,7 @@ void ofApp::draw(){
 void ofApp::keyPressed(int key){
     if(key == ' '){
         lines.clear();
+        immutableLines.clear();
         Line line = Line(ofGetWindowWidth()/4, ofGetWindowHeight(), ofGetWindowWidth()/4, 100, 32);;
         lines.push_back(line);
     }

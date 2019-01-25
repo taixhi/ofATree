@@ -21,6 +21,7 @@ public:
     int x2;
     int y2;
     int thickness;
+    int alpha;
     ofColor color;
     Line(int a, int b, int c, int d, int g);
     vector<Line> generate(float angle, int generation);
