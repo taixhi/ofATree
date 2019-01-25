@@ -35,7 +35,9 @@ void ofApp::update(){
         lines.clear();
         immutableLines.clear();
         Line line = Line(ofGetWindowWidth()/4, ofGetWindowHeight(), ofGetWindowWidth()/4, 100, 32);;
+        Line line2 = Line(ofGetWindowWidth()*3/4, ofGetWindowHeight(), ofGetWindowWidth()*3/4, 200, 32);;
         lines.push_back(line);
+        lines.push_back(line2);
         generation = 0;
     }else{
         frame++;
