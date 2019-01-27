@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include "ofApp.h"
+#include "flower.hpp"
 class Line {
 public:
     void setup();
@@ -24,7 +25,7 @@ public:
     int alpha;
     ofColor color;
     Line(int a, int b, int c, int d, int g);
-    vector<Line> generate(float angle, int generation);
+    tuple<vector<Line>, vector<Flower>> generate(float angle, int generation);
 };
 
 #endif /* line_hpp */
